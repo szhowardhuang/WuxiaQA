@@ -21,7 +21,7 @@ def load_chain():
         embedding_function=embeddings
     )
 
-    llm = InternLM_LLM(model_path = "/home/xlab-app-center/OpenLMLab/InternLM-chat-7b")
+    llm = InternLM_LLM(model_path = "/home/xlab-app-center/InternLM-chat-7b")
 
     template = """使用以下上下文来回答用户的问题。如果你不知道答案，就说你不知道。总是使用中文回答。
     问题: {question}
@@ -66,7 +66,7 @@ class Model_center():
             return e, chat_history
 
 def Download():
-    download(model_repo='OpenLMLab/InternLM-chat-7b',output='/home/xlab-app-center')
+    download(model_repo='OpenLMLab/InternLM-chat-7b',output='/home/xlab-app-center/InternLM-chat-7b')
 
 Download()
 model_center = Model_center()
