@@ -10,7 +10,7 @@ from openxlab.model import download
 def load_chain():
     # 加载问答链
     # 定义 Embeddings
-    embeddings = HuggingFaceEmbeddings(model_name="thomas-yanxin/bge-large-zh")
+    embeddings = HuggingFaceEmbeddings(model_name="BAAI/bge-large-zh")
 
     # 向量数据库持久化路径
     persist_directory = 'data_base/vector_db/chroma'
@@ -66,10 +66,9 @@ class Model_center():
             return e, chat_history
 
 def Download():
-    download(model_repo='thomas-yanxin/bge-large-zh')
     download(model_repo='OpenLMLab/InternLM-chat-7b')
 
-
+Download()
 model_center = Model_center()
 
 block = gr.Blocks()

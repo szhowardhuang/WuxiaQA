@@ -59,7 +59,7 @@ text_splitter = RecursiveCharacterTextSplitter(
 split_docs = text_splitter.split_documents(docs[:10])
 
 # 加载开源词向量模型
-embeddings = HuggingFaceEmbeddings(model_name="thomas-yanxin/bge-large-zh")
+embeddings = HuggingFaceEmbeddings(model_name="BAAI/bge-large-zh")
 
 # 构建向量数据库
 # 定义持久化路径
