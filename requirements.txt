@@ -4,3 +4,4 @@ transformers
 torch
 typing
 gradio
+sentence-transformers
