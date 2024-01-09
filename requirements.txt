@@ -5,4 +5,4 @@ torch
 typing
 gradio
 sentence-transformers
-chromadb
+chromadb==0.3.29
