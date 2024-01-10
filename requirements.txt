@@ -3,6 +3,6 @@ openxlab
 transformers
 torch
 typing
-gradio
+gradio==3.4
 sentence-transformers
 chromadb==0.3.29
