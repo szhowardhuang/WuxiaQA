@@ -67,7 +67,19 @@ class Model_center():
 
 def Download():
     download(model_repo='OpenLMLab/InternLM-chat-7b',output='/home/xlab-app-center/InternLM-chat-7b')
+    
+def unzip_db():
+    directory = "data_base"
 
+    if os.path.exists(directory):
+        print("向量库已存在")
+    else
+        os.system('cat data_base.zip* > data_base.zip')
+        os.system('rm -rf data_base.zip.0*')
+        os.system('unzip data_base.zip')
+        os.system('rm -rf data_base.zip')        
+
+unzip_db()
 Download()
 model_center = Model_center()
 
