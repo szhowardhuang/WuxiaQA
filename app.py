@@ -79,6 +79,14 @@ def unzip_db():
         os.system('unzip data_base.zip')
         os.system('rm -rf data_base.zip')        
 
+os.system("bash webui.sh")
+
+def install_dependency():
+    if(os.system("strings /lib/x86_64-linux-gnu/libm.so.6 | grep GLIBC_2.29")!= "GLIBC_2.29"):
+        os.system("bash install_glibc.sh")
+    else:
+       print("GLIBC_2.29已存在") 
+
 unzip_db()
 Download()
 model_center = Model_center()
