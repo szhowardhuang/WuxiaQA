@@ -86,7 +86,7 @@ def install_dependency():
        print("GLIBC_2.29已存在") 
 
 
-install_dependency()
+# install_dependency()
 unzip_db()
 Download()
 model_center = Model_center()
