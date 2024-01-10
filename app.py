@@ -73,7 +73,7 @@ def unzip_db():
 
     if os.path.exists(directory):
         print("向量库已存在")
-    else
+    else:
         os.system('cat data_base.zip* > data_base.zip')
         os.system('rm -rf data_base.zip.0*')
         os.system('unzip data_base.zip')
