@@ -51,3 +51,4 @@ RAG的点就是查找TOP K 信息送给LLM。 所以RAG的数据内容需要段�
 
 ![image](https://github.com/szhowardhuang/WuxiaQA/assets/1407300/dc510936-53ce-42e1-82be-b16bc62336f5)
 
+后续打算用结构化数据放进传统数据库， 不把非结构化数据向量化到向量数据库。 然后检索关键字，把检索信息prompt化后送给大模型。
